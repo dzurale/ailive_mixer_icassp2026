@@ -1,6 +1,6 @@
-baseURL = 'https://dzurale.github.io/ailive_mixer_icassp2026/'
+baseURL = 'https://dzurale.github.io/test_site_icassp2026/'
 languageCode = 'en-us'
-title = 'AiLive Mixer'
+title = 'Test Site'
 theme = "beautifulhugo"
 
 [caches]
