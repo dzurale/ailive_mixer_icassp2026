@@ -58,26 +58,55 @@ Audio results will go here. A short description of what to listen to.
 <table class="audio-table">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Audio</th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Track 1</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
             <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
             <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
         </tr>
         <tr>
-            <td>Track 2</td>
             <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
-            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 2" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
         </tr>
         <tr>
-            <td>Track 3</td>
             <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
-            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 3" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+        </tr>
+        <tr>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+        </tr>
+        <tr>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+        </tr>
+        <tr>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
         </tr>
     </tbody>
 </table>
