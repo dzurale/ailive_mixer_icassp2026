@@ -1,8 +1,13 @@
-baseURL = 'https://dzurale.github.io/test_site_icassp2026/'
+baseURL = 'https://dzurale.github.io/ailive_mixer_icassp2026/'
 languageCode = 'en-us'
-title = 'Test Site'
+title = 'AiLive Mixer'
 theme = "beautifulhugo"
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

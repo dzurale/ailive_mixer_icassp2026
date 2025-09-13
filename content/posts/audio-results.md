@@ -4,24 +4,80 @@ draft = false
 title = 'Audio Results for ICASSP 2026'
 +++
 
-## Abstract
+<style>
+.figure-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.figure-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.figure-caption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+.audio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.audio-table th, .audio-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+</style>
+
+# Abstract
 Abstract will go here. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract.  
 
-## Model Overview
+# Model Overview
 Overview of the Model goes here with titles.
 
-# First figure.
-![Image description](/images/my-image.png)
+<div class="figure-container">
+    <img src="/images/my-image.png" alt="First figure">
+    <div class="figure-caption">Figure 1: Description of the first figure goes here</div>
+</div>
 
-# Second figure.
-![Image description](/images/my-image.png)
+<div class="figure-container">
+    <img src="/images/my-image.png" alt="Second figure">
+    <div class="figure-caption">Figure 2: Description of the second figure goes here</div>
+</div>
 
-### Audio Results
+# Audio Results
 
 Audio results will go here. A short description of what to listen to.
 
-| Title | Description | Audio |
-|-------|------------|--------|
-| Track 1 | {{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}} | {{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}} |
-| Track 2 | {{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}} | {{< audio src="/audio/my-audio.wav" caption="Listen to Track 2" >}} |
-| Track 3 | {{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}} | {{< audio src="/audio/my-audio.wav" caption="Listen to Track 3" >}} |
+<table class="audio-table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Audio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Track 1</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+        </tr>
+        <tr>
+            <td>Track 2</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 2" >}}</td>
+        </tr>
+        <tr>
+            <td>Track 3</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 1" >}}</td>
+            <td>{{< audio src="/audio/my-audio.wav" caption="Listen to Track 3" >}}</td>
+        </tr>
+    </tbody>
+</table>
