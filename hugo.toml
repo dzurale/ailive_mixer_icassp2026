@@ -1,0 +1,8 @@
+baseURL = 'https://dzurale.github.io/ailive_mixer_icassp2026/'
+languageCode = 'en-us'
+title = 'AiLive Mixer'
+theme = "beautifulhugo"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
