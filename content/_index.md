@@ -4,6 +4,58 @@ draft = false
 title = 'AiLive Mixer'
 +++
 
+<style>
+/* Expand content width */
+.container {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* Center content */
+.main-content {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Make table responsive */
+@media screen and (max-width: 1200px) {
+    .audio-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.figure-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.figure-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.figure-caption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+.audio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.audio-table th, .audio-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+</style>
+
 # Abstract
 In this work, we present a deep learning-based automatic multitrack music mixing system catered towards live performances. In a live performance, channels are often corrupted with acoustic bleeds of co-located instruments. Moreover, audio-visual synchronization is of critical importance, thus putting a tight constraint on the audio latency. In this work we primarily tackle these two challenges of handling bleeds in the input channels to produce the music mix with 0 latency. Although there have been several developments in the field of automatic music mixing in recent times, most or all previous works focus on offline production for isolated instrument signals and to the best of our knowledge, this is the first end-to-end deep learning system for live music performances. Our proposed system currently predicts mono gains for a multitrack input, but its design allows for easy adaptation to future work of predicting other relevant music mixing parameters.
 
