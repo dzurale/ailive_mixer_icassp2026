@@ -62,7 +62,7 @@ In this work, we present a deep learning-based automatic multitrack music mixing
 # AiLive Mixer System Overview
 
 <div class="figure-container">
-    <img src="/images/AiLiveMixer-ICASSP.png" alt="System Overview">
+    <img src="images/AiLiveMixer-ICASSP.png" alt="System Overview">
     <div class="figure-caption">Fig.1.: AiLive Mixer - System Overview. Blue blocks to the left of the RATE-SPLIT-LINE operate with a frame size of F1 = 975 ms. Orange blocks to the right of the line operate with a frame size of F2. In this work we present results when setting F2 = 50 ms and when setting F2 = F1 = 975 ms</div>
 </div>
 
@@ -71,7 +71,7 @@ Every raw audio channel is first passed through an audio embedding model to retu
 ## Multi-Rate Processing
 
 <div class="figure-container">
-    <img src="/images/Multi-RateProcessing.png" alt="Multi-Rate Processing">
+    <img src="images/Multi-RateProcessing.png" alt="Multi-Rate Processing">
     <div class="figure-caption">Fig.2.: Multi-Rate Processing for a single channel. We set F1 frame size to be 975 ms and F2 frame size to be 50 ms when in Multi-Rate (MR) mode. In Single-Rate (SR) mode, F1 = F2 = 975 ms</div>
 </div>
 
@@ -161,6 +161,13 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/dolby_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/raw_mix.wav" >}}</td>
+            </tr>
+            <tr>
+                <td>{{< audio src="audio/Schubert_Erstarrung/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/raw_mix.wav" >}}</td>
             </tr>
             <tr>
                 <td>{{< audio src="audio/Schubert_Erstarrung/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
