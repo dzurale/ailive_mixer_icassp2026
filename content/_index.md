@@ -87,7 +87,7 @@ The multi-rate (MR) processing, reduces the latency of the system from 975 ms to
 
 # Audio Results
 
-Below we present some audio examples from the MedleyDB dataset which consists of raw tracks containing bleeds from other tracks, gain mixed with 0 latency. Results are provided for our models ALM-MR & ALM-SR along with the baseline DMC model variants DMC-OG & DMC-B-0L (DMC architecture with our proposed training strategies) and the Raw mix. Note that to mimic a live mixing scenario no normalization was applied to the generated results.
+Below we present some audio examples from the MedleyDB dataset which consists of raw tracks containing bleeds from other tracks, gain mixed with 0 latency. Results are provided for our models ALM-MR & ALM-SR along with the baseline DMC model variants DMC-OG (DMC architecture as it was proposed) & DMC-B-0L (DMC architecture with our proposed training strategies) and the Raw mix. Note that to mimic a live mixing scenario no normalization was applied to the generated results.
 
 <style>
 .audio-table-container {
@@ -140,6 +140,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
     <table class="audio-table">
         <thead>
             <tr>
+                <th>Segment</th>
                 <th>ALM-MR</th>
                 <th>ALM-SR</th>
                 <th>DMC-B-0L</th>
@@ -149,6 +150,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
         </thead>
         <tbody>
             <tr>
+                <td>Segment 1</td>
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -156,6 +158,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 2</td>
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -163,6 +166,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 3</td>
                 <td>{{< audio src="audio/Schubert_Erstarrung/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/Schubert_Erstarrung/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/Schubert_Erstarrung/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -170,6 +174,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/Schubert_Erstarrung/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 4</td>
                 <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -177,6 +182,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 5</td>
                 <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -184,6 +190,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 6</td>
                 <td>{{< audio src="audio/Karachacha_Volamos/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/Karachacha_Volamos/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/Karachacha_Volamos/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -191,6 +198,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/Karachacha_Volamos/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 7</td>
                 <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -198,6 +206,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 8</td>
                 <td>{{< audio src="audio/DahkaBand_SoldierMan/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/DahkaBand_SoldierMan/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/DahkaBand_SoldierMan/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -205,6 +214,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/DahkaBand_SoldierMan/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 9</td>
                 <td>{{< audio src="audio/CroqueMadame_Pilot/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/CroqueMadame_Pilot/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/CroqueMadame_Pilot/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
@@ -212,6 +222,7 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/CroqueMadame_Pilot/raw_mix.wav" >}}</td>
             </tr>
             <tr>
+                <td>Segment 10</td>
                 <td>{{< audio src="audio/Wolf_DieBekherte/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/Wolf_DieBekherte/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
                 <td>{{< audio src="audio/Wolf_DieBekherte/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
