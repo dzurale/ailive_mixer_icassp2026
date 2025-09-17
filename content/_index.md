@@ -1,80 +1,8 @@
----
-title: "AiLive Mixer"
-build:
-  render: never
-  list: never
-  publishResources: false
----
-
-<style>
-/* Expand content width */
-.container {
-    max-width: 100% !important;
-    width: 100% !important;
-}
-
-/* Center content */
-.main-content {
-    padding: 20px;
-    margin: 0 auto;
-}
-
-/* Style the audio table for better responsive behavior */
-.audio-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    table-layout: fixed; /* This helps with equal column widths */
-}
-
-.audio-table th,
-.audio-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    word-wrap: break-word; /* This prevents text from overflowing */
-}
-
-/* Make table responsive */
-@media screen and (max-width: 1200px) {
-    .audio-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-}
-</style>
-
-<style>
-.figure-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.figure-container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.figure-caption {
-    font-style: italic;
-    color: #666;
-    margin-top: 10px;
-}
-
-.audio-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-.audio-table th, .audio-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-</style>
++++
+date = '2025-09-17T15:02:11-05:00'
+draft = true
+title = 'AiLive Mixer'
++++
 
 # Abstract
 In this work, we present a deep learning-based automatic multitrack music mixing system catered towards live performances. In a live performance, channels are often corrupted with acoustic bleeds of co-located instruments. Moreover, audio-visual synchronization is of critical importance, thus putting a tight constraint on the audio latency. In this work we primarily tackle these two challenges of handling bleeds in the input channels to produce the music mix with 0 latency. Although there have been several developments in the field of automatic music mixing in recent times, most or all previous works focus on offline production for isolated instrument signals and to the best of our knowledge, this is the first end-to-end deep learning system for live music performances. Our proposed system currently predicts mono gains for a multitrack input, but its design allows for easy adaptation to future work of predicting other relevant music mixing parameters.
@@ -108,6 +36,53 @@ The multi-rate (MR) processing, reduces the latency of the system from 975 ms to
 # Audio Results
 
 Below we present some audio examples from the MedleyDB dataset which consists of raw tracks containing bleeds from other tracks, gain mixed with 0 latency. Results are provided for our models ALM-MR & ALM-SR along with the baseline DMC model variants DMC-OG & DMC-B-0L (DMC architecture with our proposed training strategies) and the Raw mix. Note that to mimic a live mixing scenario no normalization was applied to the generated results.
+
+<style>
+.audio-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.audio-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.audio-table th {
+    background-color: #f5f5f5;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.audio-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.audio-table audio {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Make the table more responsive */
+@media screen and (max-width: 1200px) {
+    .audio-table {
+        display: block;
+        width: 100%;
+    }
+   
+    .audio-table th,
+    .audio-table td {
+        min-width: 200px; /* Ensures audio players don't get too squeezed */
+    }
+}
+</style>
 
 <div class="audio-table-container">
     <table class="audio-table">
