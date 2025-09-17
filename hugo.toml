@@ -2,6 +2,8 @@ baseURL = 'https://dzurale.github.io/ailive_mixer_icassp2026/'
 languageCode = 'en-us'
 title = 'AiLive Mixer'
 theme = "beautifulhugo"
+[Params]
+  subtitle = "Devansh Zurale, Iris Lorente, Michael Lester, Alex Mitchell"
 
 [caches]
   [caches.images]
