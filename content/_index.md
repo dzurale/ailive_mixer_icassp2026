@@ -170,11 +170,53 @@ Below we present some audio examples from the MedleyDB dataset which consists of
                 <td>{{< audio src="audio/Schubert_Erstarrung/raw_mix.wav" >}}</td>
             </tr>
             <tr>
-                <td>{{< audio src="audio/Schubert_Erstarrung/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="audio/Schubert_Erstarrung/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="audio/Schubert_Erstarrung/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="audio/Schubert_Erstarrung/dolby_pred_mix.wav" >}}</td>
-                <td>{{< audio src="audio/Schubert_Erstarrung/raw_mix.wav" >}}</td>
+                <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/RodrigoBonelli_BalladForLaura/raw_mix.wav" >}}</td>
+            </tr>
+            <tr>
+                <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/MatthewEntwistle_ReturnToVenezia/raw_mix.wav" >}}</td>
+            </tr>
+            <tr>
+                <td>{{< audio src="audio/Karachacha_Volamos/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Karachacha_Volamos/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Karachacha_Volamos/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Karachacha_Volamos/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Karachacha_Volamos/raw_mix.wav" >}}</td>
+            </tr>
+            <tr>
+                <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/FennelCartwright_FlowerDrumSong/raw_mix.wav" >}}</td>
+            </tr>
+            <tr>
+                <td>{{< audio src="audio/DahkaBand_SoldierMan/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/DahkaBand_SoldierMan/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/DahkaBand_SoldierMan/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/DahkaBand_SoldierMan/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/DahkaBand_SoldierMan/raw_mix.wav" >}}</td>
+            </tr>
+            <tr>
+                <td>{{< audio src="audio/CroqueMadame_Pilot/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/CroqueMadame_Pilot/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/CroqueMadame_Pilot/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/CroqueMadame_Pilot/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/CroqueMadame_Pilot/raw_mix.wav" >}}</td>
+            </tr>
+            <tr>
+                <td>{{< audio src="audio/Wolf_DieBekherte/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Wolf_DieBekherte/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Wolf_DieBekherte/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Wolf_DieBekherte/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Wolf_DieBekherte/raw_mix.wav" >}}</td>
             </tr>
             <!-- Your other rows remain the same -->
         </tbody>
