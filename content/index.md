@@ -1,8 +1,10 @@
-+++
-date = '2025-09-12T17:46:07-07:00'
-draft = false
-title = 'Audio Results for ICASSP 2026'
-+++
+---
+title: "AiLive Mixer"
+build:
+  render: never
+  list: never
+  publishResources: false
+---
 
 <style>
 /* Expand content width */
@@ -107,53 +109,6 @@ The multi-rate (MR) processing, reduces the latency of the system from 975 ms to
 
 Below we present some audio examples from the MedleyDB dataset which consists of raw tracks containing bleeds from other tracks, gain mixed with 0 latency. Results are provided for our models ALM-MR & ALM-SR along with the baseline DMC model variants DMC-OG & DMC-B-0L (DMC architecture with our proposed training strategies) and the Raw mix. Note that to mimic a live mixing scenario no normalization was applied to the generated results.
 
-<style>
-.audio-table-container {
-    width: 100%;
-    overflow-x: auto;
-    margin: 20px 0;
-}
-
-.audio-table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-.audio-table th {
-    background-color: #f5f5f5;
-    padding: 12px;
-    text-align: center;
-    font-weight: bold;
-    border-bottom: 2px solid #ddd;
-}
-
-.audio-table td {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ddd;
-    vertical-align: middle;
-}
-
-.audio-table audio {
-    width: 100%;
-    max-width: 200px;
-}
-
-/* Make the table more responsive */
-@media screen and (max-width: 1200px) {
-    .audio-table {
-        display: block;
-        width: 100%;
-    }
-   
-    .audio-table th,
-    .audio-table td {
-        min-width: 200px; /* Ensures audio players don't get too squeezed */
-    }
-}
-</style>
-
 <div class="audio-table-container">
     <table class="audio-table">
         <thead>
@@ -167,25 +122,25 @@ Below we present some audio examples from the MedleyDB dataset which consists of
         </thead>
         <tbody>
             <tr>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_1/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_1/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_1/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_1/dolby_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_1/raw_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_1/raw_mix.wav" >}}</td>
             </tr>
             <tr>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_2/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_2/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_2/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_2/dolby_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/SasquatchConnection_ThanksALatte_2/raw_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/SasquatchConnection_ThanksALatte_2/raw_mix.wav" >}}</td>
             </tr>
             <tr>
-                <td>{{< audio src="/audio/Schubert_Erstarrung/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/Schubert_Erstarrung/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/Schubert_Erstarrung/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/Schubert_Erstarrung/dolby_pred_mix.wav" >}}</td>
-                <td>{{< audio src="/audio/Schubert_Erstarrung/raw_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/MR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/SR-T3-Bleeds-0Lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/dolby_bleeds_0lat_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/dolby_pred_mix.wav" >}}</td>
+                <td>{{< audio src="audio/Schubert_Erstarrung/raw_mix.wav" >}}</td>
             </tr>
             <!-- Your other rows remain the same -->
         </tbody>
